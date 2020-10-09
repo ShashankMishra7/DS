@@ -2,11 +2,11 @@
 void main ()
 {
   void bubble_sort (int[], int);
-  int n, a[n], i;
+  int n, a[20], i;
   printf ("Enter the size of array");
   scanf ("%d", &n);
   printf ("Input the array elements one  by one: \n");
-  for (i = 1; i <= n; i++)
+  for (i = 0; i<n; i++)
     {
       scanf ("%d", &a[i]);
     }
@@ -28,11 +28,10 @@ void bubble_sort(int a[], int n)
 	    }
 	}
     }
-    printf("after bubble sort");
-    for (i = 1; i <= n; i++)
+    printf("after bubble sort\n");
+    for (i = 0; i < n; i++)
     {
-      printf ("%d", a[i]);
+      printf ("%d\n", a[i]);
     }
 }
-
 
